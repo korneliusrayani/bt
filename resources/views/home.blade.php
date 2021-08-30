@@ -6,8 +6,7 @@
         <div class="col-lg-12">
             <div class="home-content">
                 <h1>Welcome</h1>
-                <p>This is a starter project for our payment integration course on Udemy. During the course you can learn how to integrate Stripe, Braintree and PayPal Smart buttons into your Laravel application. This is an in-depth course explaining every aspect of the integration process. It is not based on any existing integration, you'll learn how to do it from scratch.</p>
-                <p>You can clone this repo and run the following commands to set it up.</p>
+                <p>Payment integration.</p>
                 <p><strong>Migrate database tables:</strong></p>
                 <p><pre>php artisan migrate</pre></p>
                 <p><strong>Seed database with dummy data:</strong></p>
