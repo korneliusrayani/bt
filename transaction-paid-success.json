@@ -1,0 +1,268 @@
+{
+    "success":true,
+    "transaction":{
+       "id":"92s4s66h",
+       "status":"settling",
+       "type":"sale",
+       "currencyIsoCode":"USD",
+       "amount":"50.00",
+       "amountRequested":"50.00",
+       "merchantAccountId":"makewire",
+       "subMerchantAccountId":null,
+       "masterMerchantAccountId":null,
+       "orderId":null,
+       "createdAt":{
+          "date":"2021-08-30 10:15:03.000000",
+          "timezone_type":3,
+          "timezone":"UTC"
+       },
+       "updatedAt":{
+          "date":"2021-08-30 10:15:06.000000",
+          "timezone_type":3,
+          "timezone":"UTC"
+       },
+       "customer":{
+          "id":"168269505",
+          "firstName":null,
+          "lastName":null,
+          "company":"CUSTOMER",
+          "email":"korneliuskristian@gmail.com",
+          "website":null,
+          "phone":null,
+          "fax":null,
+          "globalId":"Y3VzdG9tZXJfMTY4MjY5NTA1"
+       },
+       "billing":{
+          "id":null,
+          "firstName":null,
+          "lastName":null,
+          "company":null,
+          "streetAddress":null,
+          "extendedAddress":null,
+          "locality":null,
+          "region":null,
+          "postalCode":null,
+          "countryName":null,
+          "countryCodeAlpha2":null,
+          "countryCodeAlpha3":null,
+          "countryCodeNumeric":null
+       },
+       "refundId":null,
+       "refundIds":[
+
+       ],
+       "refundedTransactionId":null,
+       "partialSettlementTransactionIds":[
+
+       ],
+       "authorizedTransactionId":null,
+       "settlementBatchId":"2021-08-30_makewire_7y5ahh08",
+       "shipping":{
+          "id":null,
+          "firstName":null,
+          "lastName":null,
+          "company":null,
+          "streetAddress":null,
+          "extendedAddress":null,
+          "locality":null,
+          "region":null,
+          "postalCode":null,
+          "countryName":null,
+          "countryCodeAlpha2":null,
+          "countryCodeAlpha3":null,
+          "countryCodeNumeric":null
+       },
+       "customFields":null,
+       "avsErrorResponseCode":null,
+       "avsPostalCodeResponseCode":"A",
+       "avsStreetAddressResponseCode":"A",
+       "cvvResponseCode":"A",
+       "gatewayRejectionReason":null,
+       "processorAuthorizationCode":null,
+       "processorResponseCode":"1000",
+       "processorResponseText":"Approved",
+       "additionalProcessorResponse":null,
+       "voiceReferralNumber":null,
+       "purchaseOrderNumber":null,
+       "taxAmount":null,
+       "taxExempt":false,
+       "scaExemptionRequested":null,
+       "processedWithNetworkToken":false,
+       "creditCard":{
+          "token":"bf9p5zg",
+          "bin":null,
+          "last4":null,
+          "cardType":null,
+          "expirationMonth":null,
+          "expirationYear":null,
+          "customerLocation":null,
+          "cardholderName":null,
+          "imageUrl":"https:\/\/assets.braintreegateway.com\/payment_method_logo\/unknown.png?environment=sandbox",
+          "prepaid":"Unknown",
+          "healthcare":"Unknown",
+          "debit":"Unknown",
+          "durbinRegulated":"Unknown",
+          "commercial":"Unknown",
+          "payroll":"Unknown",
+          "issuingBank":"Unknown",
+          "countryOfIssuance":"Unknown",
+          "productId":"Unknown",
+          "globalId":"cGF5bWVudG1ldGhvZF9jY19iZjlwNXpn",
+          "accountType":null,
+          "uniqueNumberIdentifier":null,
+          "venmoSdk":false,
+          "accountBalance":null
+       },
+       "paypal":{
+          "token":"bf9p5zg",
+          "payerEmail":"sb-fjfek7350176@personal.example.com",
+          "paymentId":"PAYID-MEWK7KA07U20757NJ118590E",
+          "authorizationId":"0WJ49237JA635564C",
+          "imageUrl":"https:\/\/assets.braintreegateway.com\/payment_method_logo\/paypal.png?environment=sandbox",
+          "debugId":"eafba73e6bc43",
+          "payeeId":null,
+          "payeeEmail":null,
+          "customField":null,
+          "payerId":"8WNBCH5S5XCCN",
+          "payerFirstName":"John",
+          "payerLastName":"Doe",
+          "payerStatus":"VERIFIED",
+          "payerPhone":null,
+          "sellerProtectionStatus":"ELIGIBLE",
+          "captureId":"0WJ49237JA635564C",
+          "refundId":null,
+          "transactionFeeAmount":"2.25",
+          "transactionFeeCurrencyIsoCode":"USD",
+          "refundFromTransactionFeeAmount":null,
+          "refundFromTransactionFeeCurrencyIsoCode":null,
+          "selectedFinancingTerm":null,
+          "selectedFinancingCurrencyCode":null,
+          "selectedFinancingDiscountPercentage":null,
+          "description":null,
+          "shippingOptionId":null,
+          "globalId":"cGF5bWVudG1ldGhvZF9wcF9iZjlwNXpn",
+          "cobrandedCardLabel":null,
+          "implicitlyVaultedPaymentMethodToken":null,
+          "implicitlyVaultedPaymentMethodGlobalId":null,
+          "billingAgreementId":"B-20R64442M37958022",
+          "paypalRetailTransactionId":null,
+          "paypalRetailTransactionStatus":null,
+          "paypalRetailTransactionRefundUrl":null,
+          "paypalRetailTransactionLookupUrl":null,
+          "appUsedForScanning":null
+       },
+       "statusHistory":[
+          {
+
+          },
+          {
+
+          },
+          {
+
+          }
+       ],
+       "planId":null,
+       "subscriptionId":null,
+       "subscription":{
+          "billingPeriodEndDate":null,
+          "billingPeriodStartDate":null
+       },
+       "addOns":[
+
+       ],
+       "discounts":[
+
+       ],
+       "descriptor":{
+
+       },
+       "recurring":false,
+       "channel":null,
+       "serviceFeeAmount":null,
+       "escrowStatus":null,
+       "disbursementDetails":{
+
+       },
+       "disputes":[
+
+       ],
+       "authorizationAdjustments":[
+
+       ],
+       "paymentInstrumentType":"paypal_account",
+       "processorSettlementResponseCode":"4000",
+       "processorSettlementResponseText":"Confirmed",
+       "networkResponseCode":null,
+       "networkResponseText":null,
+       "threeDSecureInfo":null,
+       "shipsFromPostalCode":null,
+       "shippingAmount":null,
+       "discountAmount":null,
+       "networkTransactionId":null,
+       "processorResponseType":"approved",
+       "authorizationExpiresAt":{
+          "date":"2021-09-29 10:15:05.000000",
+          "timezone_type":3,
+          "timezone":"UTC"
+       },
+       "retryIds":[
+
+       ],
+       "retriedTransactionId":null,
+       "refundGlobalIds":[
+
+       ],
+       "partialSettlementTransactionGlobalIds":[
+
+       ],
+       "refundedTransactionGlobalId":null,
+       "authorizedTransactionGlobalId":null,
+       "globalId":"dHJhbnNhY3Rpb25fOTJzNHM2Nmg",
+       "retryGlobalIds":[
+
+       ],
+       "retriedTransactionGlobalId":null,
+       "retrievalReferenceNumber":null,
+       "installmentCount":null,
+       "installments":[
+
+       ],
+       "refundedInstallments":[
+
+       ],
+       "responseEmvData":null,
+       "acquirerReferenceNumber":null,
+       "merchantIdentificationNumber":null,
+       "terminalIdentificationNumber":null,
+       "merchantName":null,
+       "merchantAddress":{
+          "streetAddress":null,
+          "locality":null,
+          "region":null,
+          "postalCode":null,
+          "phone":null
+       },
+       "pinVerified":false,
+       "debitNetwork":null,
+       "processingMode":null,
+       "creditCardDetails":{
+
+       },
+       "paypalDetails":{
+
+       },
+       "customerDetails":{
+
+       },
+       "billingDetails":{
+
+       },
+       "shippingDetails":{
+
+       },
+       "subscriptionDetails":{
+
+       }
+    }
+ }

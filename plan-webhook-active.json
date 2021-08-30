@@ -1,0 +1,64 @@
+{
+    "success":true,
+    "subscription":{
+       "addOns":[
+
+       ],
+       "balance":"0.00",
+       "billingDayOfMonth":29,
+       "billingPeriodEndDate":null,
+       "billingPeriodStartDate":null,
+       "createdAt":{
+          "date":"2021-08-30 09:56:26.000000",
+          "timezone_type":3,
+          "timezone":"UTC"
+       },
+       "updatedAt":{
+          "date":"2021-08-30 09:56:26.000000",
+          "timezone_type":3,
+          "timezone":"UTC"
+       },
+       "currentBillingCycle":0,
+       "daysPastDue":null,
+       "discounts":[
+
+       ],
+       "failureCount":0,
+       "firstBillingDate":{
+          "date":"2021-09-29 00:00:00.000000",
+          "timezone_type":3,
+          "timezone":"UTC"
+       },
+       "id":"jbc3hw",
+       "merchantAccountId":"makewire",
+       "neverExpires":false,
+       "nextBillAmount":"6.99",
+       "nextBillingPeriodAmount":"6.99",
+       "nextBillingDate":{
+          "date":"2021-09-29 00:00:00.000000",
+          "timezone_type":3,
+          "timezone":"UTC"
+       },
+       "numberOfBillingCycles":1,
+       "paidThroughDate":null,
+       "paymentMethodToken":"fsg7pxr",
+       "planId":"MonthlyClub",
+       "price":"6.99",
+       "status":"Active",
+       "trialDuration":30,
+       "trialDurationUnit":"day",
+       "trialPeriod":true,
+       "descriptor":{
+
+       },
+       "description":null,
+       "transactions":[
+
+       ],
+       "statusHistory":[
+          {
+
+          }
+       ]
+    }
+ }
