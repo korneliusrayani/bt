@@ -1,8 +1,22 @@
-## Starter package for the Laravel Payment Integration online course.
+# Install
 
-This repository is for our Udemy course on Stripe, Braintree and PayPal express integration. The course can be accessed here: [Laravel payment Integration Course](https://www.udemy.com/course/laravel-payment-integration-with-braintree-stripe-paypal/?referralCode=283BEFEC779BA058F483).
+```
+git clone https://github.com/korneliusrayani/bt.git pay
+cd pay && cp .env.example .env
+composer install
+php artisan key:generate
+php artisan migrate:fresh --seed
+```
 
-## License
+## Details
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# laravelpaymentstarter
+URL: bt.test/login
+
+User: admin@gmail.com
+
+Password: 12341234
+
+## Adding braintree Crendentials 
+
+1. Login as admin > Go to Payment Management > Braintree
+2. Fill fields: sanbox merchant ID, sandobx public key, sandobx private key
