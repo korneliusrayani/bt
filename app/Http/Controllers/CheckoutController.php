@@ -16,6 +16,7 @@ use App\Models\Order\Order;
 use App\Models\Product;
 use Illuminate\Support\Facades\Auth as FacadesAuth;
 use Illuminate\Support\Facades\DB as FacadesDB;
+use Illuminate\Support\Facades\Log;
 
 class CheckoutController extends Controller
 {
@@ -97,11 +98,16 @@ class CheckoutController extends Controller
                 'website' => FacadesAuth::user()->site?? '',
             ]);
 
+            Log::info('--- create customer ---');
+            Log::info(json_encode($createCustomer));
+
             $gateway = $planController->gateway();
 
             $btToken = $gateway->ClientToken()->generate([
                 'customerId' => $createCustomer->customer->id
             ]);
+
+            Log::info("--Bt Vault Token: $btToken");
         }
 
         $stripePubKey = "";

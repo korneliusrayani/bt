@@ -18,6 +18,7 @@
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.1",
         "paypal/paypal-checkout-sdk": "1.0.1",
+        "srmklive/paypal": "~3.0",
         "stripe/stripe-php": "^7.67"
     },
     "require-dev": {

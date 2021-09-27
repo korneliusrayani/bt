@@ -36,4 +36,9 @@ class OrdersController extends Controller
 
         return redirect()->route('admin.orders')->with('successMsg', 'The Order with the following id has been successfully deleted: ' . $orderId);
     }
+
+    public function cancel()
+    {
+
+    }
 }

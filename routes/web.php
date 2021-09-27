@@ -15,6 +15,7 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\FrontendCourseController;
 use App\Http\Controllers\Member\MemberDashboardController;
 use App\Http\Controllers\PlanController;
+use Braintree\WebhookNotification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
@@ -49,24 +50,44 @@ Route::get('courses/{courseId}', [FrontendCourseController::class, 'show'])->nam
 Route::get('plans', [PlanController::class, 'index'])->name('plan.index');
 Route::get('plans-all', [PlanController::class, 'allPlans'])->name('plan.all');
 Route::get('plans/{planId}', [PlanController::class, 'show'])->name('plan.show');
+
+Route::any('/paypal-webhook', function(Request $request) {
+    Log::info('--- Paypal ---');
+    Log::info(json_encode($request->all()));
+});
+
 Route::any('/braintree-webhook', function(Request $request) {
 
     Log::info(json_encode($request->all()));
 
     $gateway = (new PlanController())->gateway();
-    Log::info($request->all());
 
-    if(! $request->has('bt_signature')) {
-        return response()->json(null, 200);
+    if($request->has('test')) {
+        # Gear icon (top right) > API > Keys > MerchantID
+        $sampleNotification = $gateway->webhookTesting()->sampleNotification(
+            Braintree\WebhookNotification::SUBSCRIPTION_WENT_PAST_DUE,
+            '67zpbr'
+        );
+
+        Log::info('###');
+        Log::info(json_encode($sampleNotification));
+
+        $webhookNotification = $gateway->webhookNotification()->parse(
+            $sampleNotification['bt_signature'], $sampleNotification['bt_payload']
+        );
+
+        Log::info(json_encode($webhookNotification));
+    } else {
+        Log::info('+++');
+        $webhookNotification = $gateway->webhookNotification()->parse(
+            $request->get('bt_signature'), $request->get('bt_payload')
+        );
+
+        Log::info(json_encode($webhookNotification));
+        Log::info('+++');
     }
 
-    $webhookNotification = $gateway->webhookNotification()->parse(
-        $request->input("bt_signature"), $request->input("bt_payload")
-    );
 
-    Log::info($webhookNotification->kind);
-    Log::info('===');
-    Log::info(json_encode($webhookNotification));
 
     return response()->json($request->all(), 200);
 
@@ -112,6 +133,7 @@ Route::group([
         // Orders route
         Route::get('orders', [OrdersController::class, 'index'])->name('orders');
         Route::delete('orders/{orderId}', [OrdersController::class, 'destroy'])->name('orders.destroy');
+        Route::delete('orders-cancel/{orderId}', [OrdersController::class, 'cancel'])->name('orders.cancel');
 
     });
 
